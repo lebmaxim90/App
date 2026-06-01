@@ -14,7 +14,7 @@ class FileSearchApp:
         page.window_width = 1200
         page.window_height = 700
         
-        # ========== ВЕРХНЯЯ ПАНЕЛЬ НАВИГАЦИИ ==========
+        # Панель навигации
         self.path_field = ft.TextField(
             value=self.current_directory,
             expand=True,
@@ -47,7 +47,6 @@ class FileSearchApp:
             spacing=10
         )
         
-        # ========== ПАНЕЛЬ ПОИСКА ==========
         self.search_field = ft.TextField(
             hint_text="🔍 Введите текст для поиска в файлах...",
             expand=True,
@@ -73,7 +72,6 @@ class FileSearchApp:
             alignment=ft.MainAxisAlignment.CENTER
         )
         
-        # ========== ОСНОВНАЯ ОБЛАСТЬ ==========
         # Список файлов (левая панель)
         self.file_list = ft.ListView(expand=1, spacing=5)
         
